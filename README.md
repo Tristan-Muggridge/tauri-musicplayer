@@ -1,3 +1,5 @@
+![Demonstration GIF of application](https://github.com/Tristan-Muggridge/tauri-musicplayer/blob/main/readme/muggplayer-demo.gif?raw=true)
+
 This project was the result of trying to get something working in Tauri over the course of a couple of hours. Biggest time wasters included:
 - [Getting permission to read the filesystem](https://tauri.app/v1/api/js/fs/#readdir)
 - Figuring out how to see the console debug to find my errors (F12 on the app itself)
