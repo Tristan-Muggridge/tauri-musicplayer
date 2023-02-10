@@ -20,7 +20,7 @@
         playing = true;
     }
 
-    const handlePlayPauseOnClick = () => { audioElement.paused ? audioElement.play() : audioElement.pause(); playing = audioElement.paused; }
+    const handlePlayPauseOnClick = () => { playing = audioElement.paused; audioElement.paused ? audioElement.play() : audioElement.pause(); }
 
     readFiles();
 </script>
