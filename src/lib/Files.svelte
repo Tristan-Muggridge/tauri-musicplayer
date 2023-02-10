@@ -12,7 +12,8 @@
         directories = await readDir('Music\\MuggPlayer\\', { dir: BaseDirectory.Home, recursive: true });
     }
 
-    const handleTrackOnClick = (id: string) => {
+    const handleTrackOnClick = (id: string) => {      
+        if (audioElement as HTMLAudioElement) audioElement.pause();
         audioElement = document.getElementById(id) as HTMLAudioElement;
         audioElement.play();
         currentlyPlaying = id;
